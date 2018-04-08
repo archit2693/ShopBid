@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hackathon.iron_man">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:allowBackup"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:largeHeap="true"
+        >
+
+        <activity android:name=".Category.MainActivity"/>
+        <activity android:name=".pusherchat.MainChat"/>
+        <activity android:name=".tabview.MainActivity"/>
+        <activity android:name=".Details.MainActivity"/>
+        <activity android:name=".Collection.MainActivity"/>
+        <activity android:name=".Home.MainActivity"></activity>
+
+        <activity android:name=".SplashScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Activities.LoginActivity"/>
+        <activity android:name=".Activities.RegisterActivity"/>
+        <activity android:name=".ChoiceActivity"/>
+        <activity android:name=".product.MainActivity"/>
+        <activity android:name=".productview.MainActivity"/>
+        <activity android:name=".cart"/>
+        <activity android:name=".AccountProfile"/>
+        <receiver android:name=".NotificationPublisher" />
+    </application>
+
+</manifest>

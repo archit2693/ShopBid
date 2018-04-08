@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:padding="20sp"
+    tools:context=".Activities.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_margin="45sp"
+        android:text="Welcome to ShopBid"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_margin="10sp"
+        android:hint="Email"
+        android:padding="8sp"
+        android:background="@drawable/primary_color_btn"
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textSize="12sp"
+        android:layout_below="@+id/welcome"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_margin="10sp"
+        android:hint="Password"
+        android:padding="8sp"
+        android:background="@drawable/primary_color_btn"
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/edit1"
+        android:textColor="#000"
+        android:textSize="12sp"/>
+
+    <Button
+        android:background="@drawable/input_background"
+        android:id="@+id/login_1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/edit2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:text="Login to my Account"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/go_to_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_1"
+        android:background="@null"
+        android:onClick="new_Account"
+        android:text="Need a new Account?"
+        android:textAllCaps="false"
+        android:textColor="#000" />
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:visibility="invisible"
+        android:indeterminate="true"/>
+
+</RelativeLayout>
+

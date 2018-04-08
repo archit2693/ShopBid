@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <hackathon.iron_man.Home.SliderLayout
+                    android:id="@+id/slider"
+                    style="@style/AlertDialog.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:background="#fff"
+                    custom:pager_animation_span="1100" />
+                <hackathon.iron_man.Home.ExpandableHeightListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/toolbar_home"
+                layout="@layout/toolbar_home">
+
+            </include>
+
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>
